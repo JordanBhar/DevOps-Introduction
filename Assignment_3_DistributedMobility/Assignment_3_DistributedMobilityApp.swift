@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Assignment_3_DistributedMobilityApp: App {
+    
+    let weatherController = WeatherController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(weatherController)
         }
     }
 }
